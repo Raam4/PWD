@@ -65,27 +65,32 @@
                     <a class="nav-link" href="#">Inicio</a>
                   </li>
                   <li class="nav-item has-submenu">
-                    <a class="nav-link" href="#">Trabajo Práctico 1<i class="fas fa-caret-down"></i> </a>
+                    <a class="nav-link" href="#">Trabajo Práctico 1 <i class="fas fa-caret-down"></i> </a>
                     <ul class="submenu collapse">
-                      <li><a class="nav-link" href="#">Ejercicio 1</a></li>
-                        <li><a class="nav-link" href="#">Ejercicio 2 </a></li>
-                        <li><a class="nav-link" href="#">Ejercicio 3 </a> </li>
+                      <li><a class="nav-link" href="../TP1/EjercicioUno.php">Ejercicio 1</a></li>
+                      <li><a class="nav-link" href="../TP1/EjercicioDos.php">Ejercicio 2</a></li>
+                      <li><a class="nav-link" href="../TP1/EjercicioTres.php">Ejercicio 3</a> </li>
+                      <li><a class="nav-link" href="../TP1/EjercicioCuatro.php">Ejercicio 4</a> </li>
+                      <li><a class="nav-link" href="../TP1/EjercicioCinco.php">Ejercicio 5</a> </li>
+                      <li><a class="nav-link" href="../TP1/EjercicioSeis.php">Ejercicio 6</a> </li>
+                      <li><a class="nav-link" href="../TP1/EjercicioSiete.php">Ejercicio 7</a> </li>
+                      <li><a class="nav-link" href="../TP1/EjercicioOcho.php">Ejercicio 8</a> </li>
                     </ul>
                   </li>
                   <li class="nav-item has-submenu">
-                    <a class="nav-link" href="#">Trabajo Práctico 2<i class="fas fa-caret-down"></i> </a>
+                    <a class="nav-link" href="#">Trabajo Práctico 2 <i class="fas fa-caret-down"></i> </a>
                     <ul class="submenu collapse">
-                      <li><a class="nav-link" href="#">Ejercicio 1 </a></li>
-                        <li><a class="nav-link" href="#">Ejercicio 2 </a></li>
-                        <li><a class="nav-link" href="#">Ejercicio 3 </a></li>
+                      <li><a class="nav-link" href="../TP2/EjercicioUno.php">Ejercicio 1</a></li>
+                      <li><a class="nav-link" href="../TP2/EjercicioDos.php">Ejercicio 2</a></li>
+                      <li><a class="nav-link" href="../TP2/EjercicioTres.php">Ejercicio 3</a></li>
                     </ul>
                   </li>
                   <li class="nav-item has-submenu">
-                    <a class="nav-link" href="#">Trabajo Practico 3<i class="fas fa-caret-down"></i> </a>
+                    <a class="nav-link" href="#">Trabajo Práctico 3 <i class="fas fa-caret-down"></i> </a>
                     <ul class="submenu collapse">
                       <li><a class="nav-link" href="#">Ejercicio 1</a></li>
-                        <li><a class="nav-link" href="#">Ejercicio 2</a></li>
-                        <li><a class="nav-link" href="#">Ejercicio 3</a></li>
+                      <li><a class="nav-link" href="#">Ejercicio 2</a></li>
+                      <li><a class="nav-link" href="#">Ejercicio 3</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
