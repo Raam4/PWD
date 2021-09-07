@@ -27,13 +27,34 @@ class controltp1{
         return $rpta;
     }
 
-    public function ej3($data){
+    public function ej3a6($data){
         $nombre = $data['nombre'];
         $apellido = $data['apellido'];
         $edad = $data['edad'];
         $direccion = $data['direccion'];
-        $rpta = "Hola, yo soy ".$nombre." ".$apellido.", tengo ".$edad." años y vivo en ".$direccion.".";
+        $estudios = $data['estudios'];
+        $genero = $data['genero'];
+        $deportes = $data['deporte'];
+        $rpta = "";
+        if($edad>=18){
+            $rpta .= "Hola, yo soy ".$nombre." ".$apellido.", tengo ".$edad." años y vivo en ".$direccion.". ";
+        }else{
+            $rpta .= "Hola, yo soy ".$nombre." *******, tengo ".$edad." años y vivo en ******. ";
+        }
+        $rpta .= "Mi género es ".$genero.". ";
+        if($estudios == 'none'){
+            $rpta .= "No poseo estudios en ningún nivel. ";
+        }else{
+            $rpta .= "Poseo estudios de nivel ".$estudios.". ";
+        }
+        if(count($deportes)==0){
+            $rpta .= "No practico deportes.";
+        }else{
+            $rpta .= "Practico ".count($deportes)." deportes en total.";
+        }
         return $rpta;
     }
+
+    
 }
 ?>

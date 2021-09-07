@@ -69,10 +69,7 @@
                     <ul class="submenu collapse">
                       <li><a class="nav-link" href="../TP1/EjercicioUno.php">Ejercicio 1</a></li>
                       <li><a class="nav-link" href="../TP1/EjercicioDos.php">Ejercicio 2</a></li>
-                      <li><a class="nav-link" href="../TP1/EjercicioTres.php">Ejercicio 3</a> </li>
-                      <li><a class="nav-link" href="../TP1/EjercicioCuatro.php">Ejercicio 4</a> </li>
-                      <li><a class="nav-link" href="../TP1/EjercicioCinco.php">Ejercicio 5</a> </li>
-                      <li><a class="nav-link" href="../TP1/EjercicioSeis.php">Ejercicio 6</a> </li>
+                      <li><a class="nav-link" href="../TP1/EjercicioTresASeis.php">Ejercicio 3 a 6</a> </li>
                       <li><a class="nav-link" href="../TP1/EjercicioSiete.php">Ejercicio 7</a> </li>
                       <li><a class="nav-link" href="../TP1/EjercicioOcho.php">Ejercicio 8</a> </li>
                     </ul>

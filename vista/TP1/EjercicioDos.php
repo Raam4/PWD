@@ -5,7 +5,7 @@ include_once("../../vista/estructura/header.php"); ?>
     <div class="row">
         <div class="col-md-7">
             <div class="card border rounded shadow fw-bold">
-                <form class="needs-validation ms-3" id="horas" name="horas" method="GET" action="verhoras.php" novalidate>
+                <form class="needs-validation ms-3" id="horas" name="horas" method="GET" action="accionDos.php" novalidate>
                     <h4>Ingresar la cantidad de horas por dia</h4>
                     <div class="col-md-9 mt-3">
                         <div class="input-group mb-3">

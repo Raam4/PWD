@@ -8,12 +8,12 @@ include_once("../../utils/funciones.php")
     <?php
         $data = data_submitted();
         $obj = new controltp1();
-        $rpta = $obj->ej3($data);
+        $rpta = $obj->ej3a6($data);
     ?>
     <h3>Respuesta:</h3>
     <?php echo $rpta?>
     <br />
-    <a href='EjercicioTres.php'>Volver</a>
+    <a href='EjercicioTresASeis.php'>Volver</a>
 </div>
 <?php
 include_once("../../vista/estructura/footer.php");
