@@ -1,5 +1,5 @@
 <?php
-$Titulo = "Resultado ej 3 a 6";
+$Titulo = "Resultado ej 8";
 include_once("../../vista/estructura/header.php");
 include_once("../../control/tepe1.php");
 include_once("../../utils/funciones.php")
@@ -8,12 +8,12 @@ include_once("../../utils/funciones.php")
     <?php
         $data = data_submitted();
         $obj = new controltp1();
-        $rpta = $obj->ej3a6($data);
+        $rpta = $obj->ej8($data);
     ?>
     <h3>Respuesta:</h3>
     <?php echo $rpta?>
     <br />
-    <a href='EjercicioTresASeis.php'>Volver</a>
+    <a href='EjercicioOcho.php'>Volver</a>
 </div>
 <?php
 include_once("../../vista/estructura/footer.php");

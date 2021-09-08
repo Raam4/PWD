@@ -4,7 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap/bootstrapValidator.min.css">
         <link rel="stylesheet" href="../css/fontawesome/all.min.css">
+        <script src="../js/jquery/jquery-3.5.1.slim.min.js"></script>
+        <script src="../js/popper/popper.min.js"></script>
+        <script src="../js/bootstrap/bootstrap.min.js"></script>
+        <script src="../js/bootstrap/bootstrapValidator.min.js"></script>
         <title><?php $Titulo ?></title>
         <style type="text/css">
           .sidebar li .submenu{ 
@@ -77,24 +82,9 @@
                   <li class="nav-item has-submenu">
                     <a class="nav-link" href="#">Trabajo Práctico 2 <i class="fas fa-caret-down"></i> </a>
                     <ul class="submenu collapse">
-                      <li><a class="nav-link" href="../TP2/EjercicioUno.php">Ejercicio 1</a></li>
-                      <li><a class="nav-link" href="../TP2/EjercicioDos.php">Ejercicio 2</a></li>
                       <li><a class="nav-link" href="../TP2/EjercicioTres.php">Ejercicio 3</a></li>
+                      <li><a class="nav-link" href="../TP2/EjercicioCuatro.php">Ejercicio 4</a></li>
                     </ul>
-                  </li>
-                  <li class="nav-item has-submenu">
-                    <a class="nav-link" href="#">Trabajo Práctico 3 <i class="fas fa-caret-down"></i> </a>
-                    <ul class="submenu collapse">
-                      <li><a class="nav-link" href="#">Ejercicio 1</a></li>
-                      <li><a class="nav-link" href="#">Ejercicio 2</a></li>
-                      <li><a class="nav-link" href="#">Ejercicio 3</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Demo link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Demo link</a>
                   </li>
                 </ul>
               </nav>

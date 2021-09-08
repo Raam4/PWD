@@ -55,6 +55,32 @@ class controltp1{
         return $rpta;
     }
 
-    
+    public function ej7($data){
+        $uno = $data['fi'];
+        $dos = $data['se'];
+        $op = $data['op'];
+        if($op == 'suma'){
+            $rpta = $uno." + ".$dos." = ".$uno + $dos;
+        }
+        if($op == 'resta'){
+            $rpta = $uno." - ".$dos." = ".$uno + $dos;
+        }
+        if($op == 'multi'){
+            $rpta = $uno." * ".$dos." = ".$uno + $dos;
+        }
+        return $rpta;
+    }
+
+    public function ej8($data){
+        if($data['edad'] < 12){
+            $precio = 160;
+        }elseif($data['edad'] >= 12 && $data['estudiante'] == 'Si'){
+            $precio = 180;
+        }else{
+            $precio = 300;
+        }
+        $rpta = "Datos: ".$data['nombre']." ".$data['apellido'].", ".$data['edad']." años. ".$data['direccion'].". ".$data['estudiante']." es estudiante. Precio de Entrada $".$precio;
+        return $rpta;
+    }
 }
 ?>

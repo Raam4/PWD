@@ -3,57 +3,64 @@ $Titulo = "Ejercicio 2";
 include_once("../../vista/estructura/header.php"); ?>
 <div class="container">
     <div class="row">
-        <div class="col-md-7">
-            <div class="card border rounded shadow fw-bold">
-                <form class="needs-validation ms-3" id="horas" name="horas" method="GET" action="accionDos.php" novalidate>
-                    <h4>Ingresar la cantidad de horas por dia</h4>
-                    <div class="col-md-9 mt-3">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="mon">Lunes</span>
-                            <input class="form-control" type="number" id="lunes" name="lunes" aria-describedby="mon">
+        <div class="col-md-8">
+            <div class="card border rounded shadow fw-bold ps-3">
+                <h4>Ingresar la cantidad de horas de cursada por dia:</h4>
+                <form class="form-horizontal" id="horas" name="horas" method="GET" action="accionDos.php" data-toggle="validator" enctype="multipart/form-data" novalidate>
+                    <div class="form-group">
+                        <div class="row my-2">
+                            <div class="col-sm-2 pt-1">
+                                <label class="control-label">Lunes</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control" name="lunes" id="lunes" />
+                            </div>
                         </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="tue">Martes</span>
-                            <input class="form-control" type="number" id="martes" name="martes" aria-describedby="tue">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="wed">Miércoles</span>
-                            <input class="form-control" type="number" id="miercoles" name="miercoles" aria-describedby="wed">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="thu">Jueves</span>
-                            <input class="form-control" type="number" id="jueves" name="jueves" aria-describedby="thu">
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="fri">Viernes</span>
-                            <input class="form-control" type="number" id="viernes" name="viernes" aria-describedby="fri">
-                        </div>
-                    <button class="btn btn-primary mb-1" type="submit">Enviar</button>
                     </div>
+                    <div class="form-group">
+                        <div class="row mb-2">
+                            <div class="col-sm-2 pt-1">
+                                <label class="control-label">Martes</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control" name="martes" id="martes" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row mb-2">
+                            <div class="col-sm-2 pt-1">
+                                <label class="control-label">Miercoles</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control" name="miercoles" id="miercoles" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row mb-2">
+                            <div class="col-sm-2 pt-1">
+                                <label class="control-label">Jueves</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control" name="jueves" id="jueves" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row mb-2">
+                            <div class="col-sm-2 pt-1">
+                                <label class="control-label">Viernes</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control" name="viernes" id="viernes" />
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mb-1" type="submit">Enviar</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
-<script>
-    (function () {
-        'use strict'
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll('.needs-validation')
-
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms)
-            .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-                }
-
-                form.classList.add('was-validated')
-            }, false)
-            })
-        })()
-</script>
 <?php include_once("../../vista/estructura/footer.php"); ?>
