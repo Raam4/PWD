@@ -101,11 +101,56 @@ $('#operacion').bootstrapValidator({
             validators: {
                 notEmpty: {}
             }
-        }
-    },
-    fields: {
+        },
         se: {
             message : 'Debe ingresar un numero',
+            validators: {
+                notEmpty: {}
+            }
+        },
+        op: {
+            message: 'Debe seleccionar una operación',
+            validators: {
+                notEmpty: {}
+            }
+        }
+    }
+});
+
+$('#datos').bootstrapValidator({
+    message: 'Este valor no es valido',
+    feedbackIcons: {
+        valid: 'fa fa-check',
+        invalid: 'fa fa-exclamation',
+        validating: 'fa fa-circle'
+    },
+    fields: {
+        nombre: {
+            message : 'Debe ingresar un nombre',
+            validators: {
+                notEmpty: {}
+            }
+        },
+        apellido: {
+            message : 'Debe ingresar un apellido',
+            validators: {
+                notEmpty: {}
+            }
+        },
+        edad: {
+            message: 'Debe ingresar una edad válida',
+            validators: {
+                notEmpty: {}
+            }
+        },
+        direccion: {
+            message: 'Debe ingresar una dirección',
+            validators: {
+                notEmpty: {}
+            }
+        },
+        estudiante: {
+            message: 'Debe seleccionar una opción',
             validators: {
                 notEmpty: {}
             }

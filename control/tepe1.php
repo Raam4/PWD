@@ -63,10 +63,10 @@ class controltp1{
             $rpta = $uno." + ".$dos." = ".$uno + $dos;
         }
         if($op == 'resta'){
-            $rpta = $uno." - ".$dos." = ".$uno + $dos;
+            $rpta = $uno." - ".$dos." = ".$uno - $dos;
         }
         if($op == 'multi'){
-            $rpta = $uno." * ".$dos." = ".$uno + $dos;
+            $rpta = $uno." * ".$dos." = ".$uno * $dos;
         }
         return $rpta;
     }

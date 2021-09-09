@@ -5,7 +5,7 @@ include_once("../../vista/estructura/header.php"); ?>
     <div class="row">
         <div class="col-sm-8">
             <div class="card border rounded shadow fw-bold pt-1">
-                <form class="ms-2 mb-3" id="datapers" name="datapers" method="POST" action="accionTresASeis.php" data-toggle="validator" enctype="multipart/form-data" novalidate>
+                <form class="ms-2 mb-3" id="datapers" name="datapers" method="POST" action="accionTresASeis.php" data-toggle="validator" novalidate>
                     <h4>Ingrese sus datos</h4>
                     <div class="row pe-2 mt-3">
                         <div class="col-md-6">

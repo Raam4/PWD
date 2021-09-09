@@ -5,7 +5,7 @@ include_once("../../vista/estructura/header.php"); ?>
     <div class="row">
         <div class="col-sm-4">
             <div class="card border rounded shadow fw-bold">
-                <form id="num" name="num" method="POST" action="accionUno.php" data-toggle="validator" enctype="multipart/form-data">
+                <form id="num" name="num" method="POST" action="accionUno.php" data-toggle="validator">
                     <div class="col-sm-10 ps-3 mb-3">
                         <label for="numero" class="form-label">Ingrese un numero:</label>
                         <input class="form-control" type="number" id="numero" name="numero" required>
