@@ -3,7 +3,7 @@
                 </section>
             </div>
             <footer class="footer mt-auto py-3 bg-dark">
-                <div class="container">
+                <div class="container-fluid">
                     <p style="color: whitesmoke;">Blog built by me</p>
                     <p>
                         <a href="#">Back to top</a>

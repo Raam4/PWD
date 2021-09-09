@@ -53,14 +53,12 @@
         </script>
     </head>
     <body class="bg-light">
-
       <header class="section-header py-3">
-      <div class="container">
-        <h2>Programación Web Dinámica</h2> 
-      </div>
+        <div class="container-fluid">
+          <h2>Programación Web Dinámica</h2> 
+        </div>
       </header>
-
-      <div class="container">
+      <div class="container-fluid">
         <section class="section-content py-3">
           <div class="row">
             <aside class="col-lg-3">

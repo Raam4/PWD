@@ -1,7 +1,7 @@
 <?php 
 $Titulo = "Ejercicio 1";
 include_once("../../vista/estructura/header.php"); ?>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-sm-4">
             <div class="card border rounded shadow fw-bold">
