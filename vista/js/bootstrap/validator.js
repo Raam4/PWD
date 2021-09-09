@@ -232,7 +232,7 @@ $('#cinemas').bootstrapValidator({
                     message: 'Debe ingresar al menos un nombre'
                 },
                 regexp: {
-                    regexp: /^[0-9A-Za-zñáéíóúÑÁÉÍÓÚüÜ'\-,]+$/,
+                    regexp: /^[0-9A-Za-zñáéíóúÑÁÉÍÓÚüÜ '\-,]+$/,
                     message: 'Debe ingresar nombres y apellidos separados por coma'
                 }
             }

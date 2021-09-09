@@ -65,12 +65,12 @@ include_once("../estructura/header.php");
                                         <label>Género</label>
                                         <select name="genero" class="form-select">
                                             <option selected value="">...</option>
-                                            <option value="comedia">Comedia</option>
-                                            <option value="drama">Drama</option>
-                                            <option value="terror">Terror</option>
-                                            <option value="romantica">Romántica</option>
-                                            <option value="suspenso">Suspenso</option>
-                                            <option value="otra">Otra</option>
+                                            <option value="Comedia">Comedia</option>
+                                            <option value="Drama">Drama</option>
+                                            <option value="Terror">Terror</option>
+                                            <option value="Romantica">Romántica</option>
+                                            <option value="Suspenso">Suspenso</option>
+                                            <option value="Otra">Otra</option>
                                         </select>
                                     </div>
                                 </div>
