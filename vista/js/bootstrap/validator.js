@@ -210,3 +210,141 @@ $('#login').bootstrapValidator({
         // Show only message associated with current validator
         .filter('[data-bv-validator="' + data.validator + '"]').show();
 });
+
+$('#cinemas').bootstrapValidator({
+    message: 'Este valor no es valido',
+    feedbackIcons: {
+        valid: 'fa fa-check',
+        invalid: 'fa fa-exclamation',
+        validating: 'fa fa-circle'
+    },
+    fields: {
+        titulo: {
+            validators:{
+                notEmpty:{
+                    message: 'Debe ingresar un titulo'
+                }
+            }
+        },
+        actores: {
+            validators: {
+                notEmpty: {
+                    message: 'Debe ingresar al menos un nombre'
+                },
+                regexp: {
+                    regexp: /^[0-9A-Za-zñáéíóúÑÁÉÍÓÚüÜ'\-,]+$/,
+                    message: 'Debe ingresar nombres y apellidos separados por coma'
+                }
+            }
+        },
+        director: {
+            validators:{
+                notEmpty:{
+                    message: 'Debe ingresar al menos un nombre'
+                },
+                regexp: {
+                    regexp: /^[0-9A-Za-zñáéíóúÑÁÉÍÓÚüÜ'\-,]+$/,
+                    message: 'Se detectan caracteres inválidos'
+                }
+            }
+        },
+        guion: {
+            validators:{
+                notEmpty:{
+                    message: 'Debe ingresar al menos un nombre'
+                },
+                regexp: {
+                    regexp: /^[0-9A-Za-zñáéíóúÑÁÉÍÓÚüÜ'\-,]+$/,
+                    message: 'Se detectan caracteres inválidos'
+                }
+            }
+        },
+        produccion: {
+            validators:{
+                notEmpty:{
+                    message: 'Debe ingresar al menos un productor',
+                },
+                regexp: {
+                    regexp: /^[0-9A-Za-zñáéíóúÑÁÉÍÓÚüÜ;\.:'\s\-,]+$/,
+                    message: 'Se detectan caracteres inválidos'
+                }
+            }
+        },
+        anio: {
+            message: 'Ingrese un número válido',
+            validators:{
+                notEmpty:{
+                    message: 'Debe ingresar un año',
+                },
+                digits:{
+                    message: 'Solo números'
+                },
+                greaterThan: {
+                    value: 1895,
+                    message: "No puede ser menor a 1895"
+                },
+                lessThan: {
+                    value: 2021,
+                    message: "No puede superar 2021"
+                }
+            }
+        },
+        nacionalidad: {
+            validators:{
+                notEmpty:{
+                    message: 'Debe ingresar una nacionalidad',
+                },
+                regexp: {
+                    regexp: /^[A-Za-zñáéíóúÑÁÉÍÓÚüÜ]+$/,
+                    message: 'Se detectan caracteres inválidos'
+                }
+            }
+        },
+        genero: {
+            validators:{
+                notEmpty:{
+                    message: 'Debe seleccionar un género',
+                }
+            }
+        },
+        duracion: {
+            validators:{
+                notEmpty:{
+                    message: 'Debe ingresar la duración en minutos',
+                },
+                digits:{
+                    message: 'Solo números'
+                },
+                greaterThan: {
+                    value: 1,
+                    message: "No puede ser menor a 1"
+                },
+                lessThan: {
+                    value: 999,
+                    message: "No puede superar 999"
+                }
+            }
+        },
+        restriccion: {
+            validators:{
+                notEmpty:{
+                    message: 'Debe seleccionar una restricción de edad',
+                }
+            }
+        }
+    }
+})
+.on('error.validator.bv', function(e, data) {
+    // $(e.target)    --> The field element
+    // data.bv        --> The BootstrapValidator instance
+    // data.field     --> The field name
+    // data.element   --> The field element
+    // data.validator --> The current validator name
+
+    data.element
+        .data('bv.messages')
+        // Hide all the messages
+        .find('.help-block[data-bv-for="' + data.field + '"]').hide()
+        // Show only message associated with current validator
+        .filter('[data-bv-validator="' + data.validator + '"]').show();
+});

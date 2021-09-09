@@ -10,18 +10,18 @@ include_once("../estructura/header.php");
                         <p class="card-title fw-bold fs-5" style="color: #0081b5;"><i class="fas fa-edit"></i> Cinem@s</p>
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form id="cinemas" name="cinemas" method="POST" action="accionCuatro.php" data-toggle="validator" novalidate>
                             <div class="row mb-3">
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Título</label>
-                                        <input class="form-control" type="text" placeholder="Titulo">
+                                        <input name="titulo" class="form-control" type="text" placeholder="Titulo">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Actores</label>
-                                        <input class="form-control" type="text" placeholder="Actores">
+                                        <input name="actores" class="form-control" type="text" placeholder="Actores">
                                     </div>
                                 </div>
                             </div>
@@ -29,13 +29,13 @@ include_once("../estructura/header.php");
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Director</label>
-                                        <input class="form-control" type="text" placeholder="Director">
+                                        <input name="director" class="form-control" type="text" placeholder="Director">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Guión</label>
-                                        <input class="form-control" type="text" placeholder="Guion">
+                                        <input name="guion" class="form-control" type="text" placeholder="Guion">
                                     </div>
                                 </div>
                             </div>
@@ -43,13 +43,13 @@ include_once("../estructura/header.php");
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Producción</label>
-                                        <input class="form-control" type="text" placeholder="">
+                                        <input name="produccion" class="form-control" type="text" placeholder="">
                                     </div>
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-3">
                                     <div class="form-group">
                                         <label>Año</label>
-                                        <input class="form-control" type="number" placeholder="">
+                                        <input name="anio" class="form-control" type="number" placeholder="">
                                     </div>
                                 </div>
                             </div>
@@ -57,20 +57,20 @@ include_once("../estructura/header.php");
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Nacionalidad</label>
-                                        <input class="form-control" type="text" placeholder="">
+                                        <input name="nacionalidad" class="form-control" type="text" placeholder="">
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="form-group">
                                         <label>Género</label>
-                                        <select class="form-select">
-                                            <option disabled>...</option>
-                                            <option>Comedia</option>
-                                            <option>Drama</option>
-                                            <option>Terror</option>
-                                            <option>Romántica</option>
-                                            <option>Suspenso</option>
-                                            <option>Otra</option>
+                                        <select name="genero" class="form-select">
+                                            <option selected value="">...</option>
+                                            <option value="comedia">Comedia</option>
+                                            <option value="drama">Drama</option>
+                                            <option value="terror">Terror</option>
+                                            <option value="romantica">Romántica</option>
+                                            <option value="suspenso">Suspenso</option>
+                                            <option value="otra">Otra</option>
                                         </select>
                                     </div>
                                 </div>
@@ -79,19 +79,30 @@ include_once("../estructura/header.php");
                                 <div class="col-sm-4">
                                     <div class="form-group">
                                         <label>Duración</label>
-                                        <input class="form-control" type="text" placeholder="">
-                                        <label class="fw-light">(minutos)</label>
+                                        <div class="input-group">
+                                            <div class="row ms-0">
+                                            <input name="duracion" class="form-control" type="text" placeholder="">
+                                            </div>
+                                            <div class="row">
+                                            <label class="fw-light">(minutos)</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-sm-8">
                                     <label>Restricciones de Edad</label>
                                     <div class="form-group pt-2">
-                                        <input class="form-check-input" type="radio" id="ATP" name="rest">
-                                        <label class="form-check-label ms-1 me-2 fw-light" for="ATP">Todo Público</label>
-                                        <input class="form-check-input" type="radio" id="M7" name="rest">
-                                        <label class="form-check-label ms-1 me-2 fw-light" for="M7">Mayores de 7 años</label>
-                                        <input class="form-check-input" type="radio" id="M18" name="rest">
-                                        <label class="form-check-label ms-1 me-2 fw-light" for="M18">Mayores de 18 años</label>
+                                        <div class="input-group">
+                                            <label class="form-check-label ms-1 me-2 fw-light">
+                                                <input class="form-check-input" type="radio" name="restriccion" value="atp">Todo Público
+                                            </label>
+                                            <label class="form-check-label ms-1 me-2 fw-light">
+                                                <input class="form-check-input" type="radio" name="restriccion" value="m7">Mayores de 7 años
+                                            </label>
+                                            <label class="form-check-label ms-1 me-2 fw-light">
+                                                <input class="form-check-input" type="radio" name="restriccion" value="m18">Mayores de 18 años
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -99,7 +110,7 @@ include_once("../estructura/header.php");
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label>Sinopsis</label>
-                                        <textarea class="form-control" rows="2"></textarea>
+                                        <textarea name="sinopsis" class="form-control" rows="2"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -109,6 +120,11 @@ include_once("../estructura/header.php");
                                     <button class="btn btn-secondary" type="reset">Borrar</button>
                                 </div>
                             </div>
+                            <script>
+                                $("#cinemas").bind("reset", function(event){
+                                    $("#cinemas").data('bootstrapValidator').resetForm();
+                                });
+                            </script>
                         </form>
                     </div>
                 </div>
