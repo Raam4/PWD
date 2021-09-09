@@ -52,7 +52,7 @@ include_once("../../vista/estructura/header.php"); ?>
                                     <input type="radio" name="estudios" id="primario" value="Primario" required> Primario
                                 </label>
                                 <label class="radio me-2">
-                                    <input type="radio" name="estudios" id="secundario" value="Secundario" required /> Secundario
+                                    <input type="radio" name="estudios" id="secundario" value="Secundario" required> Secundario
                                 </label>
                         </div>
                     </div>

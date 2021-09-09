@@ -87,3 +87,28 @@ $('#datapers').bootstrapValidator({
         }
     }
 });
+
+$('#operacion').bootstrapValidator({
+    message: 'Este valor no es valido',
+    feedbackIcons: {
+        valid: 'fa fa-check',
+        invalid: 'fa fa-exclamation',
+        validating: 'fa fa-circle'
+    },
+    fields: {
+        fi: {
+            message : 'Debe ingresar un numero',
+            validators: {
+                notEmpty: {}
+            }
+        }
+    },
+    fields: {
+        se: {
+            message : 'Debe ingresar un numero',
+            validators: {
+                notEmpty: {}
+            }
+        }
+    }
+});
