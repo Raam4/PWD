@@ -91,6 +91,22 @@ include_once("../../vista/estructura/header.php"); ?>
                 </form>
             </div>
         </div>
+        <div class="col-sm-4">
+            <p>
+            Crear una página php que contenga un formulario HTML como el que se indica en la
+            imagen (darle formato con CSS), enviar estos datos por el método Post a otra página php
+            que los reciba y muestre por pantalla un mensaje como el siguiente: “Hola, yo soy
+            nombre , apellido tengo edad años y vivo en dirección”, usando la información recibida.<br />
+            *Usando la edad solicitada, enviar esos datos a otra página en donde se muestren mensajes
+            distintos dependiendo si la persona es mayor de edad o no; (si la edad es mayor o igual a 18).<br />
+            *Usando componentes “radios buttons” se ingrese el nivel de estudio de la persona: 1-no tiene 
+            estudios, 2- estudios primarios, 3-estudios secundarios. Agregar el componente que crea más
+            apropiado para solicitar el sexo. En la página que procesa el formulario mostrar además
+            un mensaje que indique el tipo de estudios que posee y su sexo.<br />
+            *Que permita seleccionar los diferentes deportes que practica (futbol, basket, tennis, voley) 
+            un alumno. Mostrar en la página que procesa el formulario la cantidad de deportes que practica.
+            </p>
+        </div>
     </div>
 </div>
 <?php include_once("../../vista/estructura/footer.php"); ?>

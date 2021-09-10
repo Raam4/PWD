@@ -29,6 +29,30 @@ $('#horas').bootstrapValidator({
             validators: {
                 notEmpty: {}
             }
+        },
+        martes: {
+            message : 'Ingrese un número',
+            validators: {
+                notEmpty: {}
+            }
+        },
+        miercoles: {
+            message : 'Ingrese un número',
+            validators: {
+                notEmpty: {}
+            }
+        },
+        jueves: {
+            message : 'Ingrese un número',
+            validators: {
+                notEmpty: {}
+            }
+        },
+        viernes: {
+            message : 'Ingrese un número',
+            validators: {
+                notEmpty: {}
+            }
         }
     }
 });
@@ -42,15 +66,25 @@ $('#datapers').bootstrapValidator({
     },
     fields: {
         nombre: {
-            message : 'Debe ingresar un nombre',
             validators: {
-                notEmpty: {}
+                notEmpty: {
+                    message : 'Debe ingresar un nombre'
+                },
+                regexp: {
+                    regexp: /^[A-Za-zñáéíóúÑÁÉÍÓÚüÜ ]+$/,
+                    message: 'Se detectan caracteres invalidos'
+                }
             }
         },
         apellido: {
-            message : 'Debe ingresar un apellido',
             validators: {
-                notEmpty: {}
+                notEmpty: {
+                    message : 'Debe ingresar un nombre'
+                },
+                regexp: {
+                    regexp: /^[A-Za-zñáéíóúÑÁÉÍÓÚüÜ ]+$/,
+                    message: 'Se detectan caracteres invalidos'
+                }
             }
         },
         edad: {
@@ -71,7 +105,11 @@ $('#datapers').bootstrapValidator({
         direccion: {
             message : 'Debe ingresar una dirección',
             validators: {
-                notEmpty: {}
+                notEmpty: {},
+                regexp: {
+                    regexp: /^[A-Za-zñáéíóúÑÁÉÍÓÚüÜ ]+$/,
+                    message: 'Se detectan caracteres invalidos'
+                }
             }
         },
         genero: {
@@ -87,6 +125,12 @@ $('#datapers').bootstrapValidator({
             }
         }
     }
+})
+.on('error.validator.bv', function(e, data) {
+    data.element
+        .data('bv.messages')
+        .find('.help-block[data-bv-for="' + data.field + '"]').hide()
+        .filter('[data-bv-validator="' + data.validator + '"]').show();
 });
 
 $('#operacion').bootstrapValidator({
@@ -127,27 +171,45 @@ $('#datos').bootstrapValidator({
     },
     fields: {
         nombre: {
-            message : 'Debe ingresar un nombre',
             validators: {
-                notEmpty: {}
+                notEmpty: {
+                    message : 'Debe ingresar un nombre'
+                },
+                regexp: {
+                    regexp: /^[A-Za-zñáéíóúÑÁÉÍÓÚüÜ ]+$/,
+                    message: 'Se detectan caracteres invalidos'
+                }
             }
         },
         apellido: {
-            message : 'Debe ingresar un apellido',
             validators: {
-                notEmpty: {}
+                notEmpty: {
+                    message : 'Debe ingresar un nombre'
+                },
+                regexp: {
+                    regexp: /^[A-Za-zñáéíóúÑÁÉÍÓÚüÜ ]+$/,
+                    message: 'Se detectan caracteres invalidos'
+                }
             }
         },
         edad: {
             message: 'Debe ingresar una edad válida',
             validators: {
-                notEmpty: {}
+                notEmpty: {},
+                greaterThan: {
+                    value: -1
+                },
             }
         },
         direccion: {
-            message: 'Debe ingresar una dirección',
             validators: {
-                notEmpty: {}
+                notEmpty: {
+                    message: 'Debe ingresar una dirección'
+                },
+                regexp: {
+                    regexp: /^[A-Za-zñáéíóúÑÁÉÍÓÚüÜ ]+$/,
+                    message: 'Se detectan caracteres invalidos'
+                }
             }
         },
         estudiante: {
@@ -157,6 +219,12 @@ $('#datos').bootstrapValidator({
             }
         }
     }
+})
+.on('error.validator.bv', function(e, data) {
+    data.element
+        .data('bv.messages')
+        .find('.help-block[data-bv-for="' + data.field + '"]').hide()
+        .filter('[data-bv-validator="' + data.validator + '"]').show();
 });
 //FIN VALIDADORES TP 1
 
@@ -197,17 +265,9 @@ $('#login').bootstrapValidator({
     }
 })
 .on('error.validator.bv', function(e, data) {
-    // $(e.target)    --> The field element
-    // data.bv        --> The BootstrapValidator instance
-    // data.field     --> The field name
-    // data.element   --> The field element
-    // data.validator --> The current validator name
-
     data.element
         .data('bv.messages')
-        // Hide all the messages
         .find('.help-block[data-bv-for="' + data.field + '"]').hide()
-        // Show only message associated with current validator
         .filter('[data-bv-validator="' + data.validator + '"]').show();
 });
 
@@ -243,7 +303,7 @@ $('#cinemas').bootstrapValidator({
                     message: 'Debe ingresar al menos un nombre'
                 },
                 regexp: {
-                    regexp: /^[0-9A-Za-zñáéíóúÑÁÉÍÓÚüÜ'\-,]+$/,
+                    regexp: /^[0-9A-Za-zñáéíóúÑÁÉÍÓÚüÜ '\-,]+$/,
                     message: 'Se detectan caracteres inválidos'
                 }
             }
@@ -254,7 +314,7 @@ $('#cinemas').bootstrapValidator({
                     message: 'Debe ingresar al menos un nombre'
                 },
                 regexp: {
-                    regexp: /^[0-9A-Za-zñáéíóúÑÁÉÍÓÚüÜ'\-,]+$/,
+                    regexp: /^[0-9A-Za-zñáéíóúÑÁÉÍÓÚüÜ '\-,]+$/,
                     message: 'Se detectan caracteres inválidos'
                 }
             }
@@ -265,7 +325,7 @@ $('#cinemas').bootstrapValidator({
                     message: 'Debe ingresar al menos un productor',
                 },
                 regexp: {
-                    regexp: /^[0-9A-Za-zñáéíóúÑÁÉÍÓÚüÜ;\.:'\s\-,]+$/,
+                    regexp: /^[0-9A-Za-zñáéíóúÑÁÉÍÓÚüÜ '\-,]+$/,
                     message: 'Se detectan caracteres inválidos'
                 }
             }
@@ -295,7 +355,7 @@ $('#cinemas').bootstrapValidator({
                     message: 'Debe ingresar una nacionalidad',
                 },
                 regexp: {
-                    regexp: /^[A-Za-zñáéíóúÑÁÉÍÓÚüÜ]+$/,
+                    regexp: /^[A-Za-zñáéíóúÑÁÉÍÓÚüÜ ]+$/,
                     message: 'Se detectan caracteres inválidos'
                 }
             }
@@ -342,16 +402,8 @@ $('#cinemas').bootstrapValidator({
     }
 })
 .on('error.validator.bv', function(e, data) {
-    // $(e.target)    --> The field element
-    // data.bv        --> The BootstrapValidator instance
-    // data.field     --> The field name
-    // data.element   --> The field element
-    // data.validator --> The current validator name
-
     data.element
         .data('bv.messages')
-        // Hide all the messages
         .find('.help-block[data-bv-for="' + data.field + '"]').hide()
-        // Show only message associated with current validator
         .filter('[data-bv-validator="' + data.validator + '"]').show();
 });

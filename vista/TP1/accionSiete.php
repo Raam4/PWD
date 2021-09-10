@@ -12,8 +12,8 @@ include_once("../../utils/funciones.php")
     ?>
     <h2>Respuesta:</h2>
     <h3><?php echo $rpta?></h3>
-    <br />
-    <a href='EjercicioSiete.php'>Volver</a>
+    <<br />
+    <a href='EjercicioSiete.php'><button class="btn btn-outline-secondary btn-sm">Volver</button></a>
 </div>
 <?php
 include_once("../../vista/estructura/footer.php");

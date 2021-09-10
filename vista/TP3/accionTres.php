@@ -30,6 +30,8 @@ $img = $rpta['file'];
                     </div>
                 </div>
             </div>
+            <br />
+            <a href='EjercicioTres.php'><button class="btn btn-outline-secondary btn-sm">Volver</button></a>
         </div>
     </div>
 </div>

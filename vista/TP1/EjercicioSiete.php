@@ -26,4 +26,17 @@ include_once("../../vista/estructura/header.php"); ?>
                         </div>
                     </div>
                 </form>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <p>
+                Crear una página con un formulario que contenga dos input de tipo text y un select. En
+                los inputs se ingresarán números y el select debe dar la opción de una operación
+                matemática que podrá resolverse usando los números ingresados. En la página que
+                procesa la información se debe mostrar por pantalla la operación seleccionada, cada
+                uno de los operandos y el resultado obtenido de resolver la operación.
+            </p>
+        </div>
+    </div>
+</div>
 <?php include_once("../../vista/estructura/footer.php"); ?>

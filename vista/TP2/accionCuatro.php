@@ -25,6 +25,8 @@ $rpta = $obj->ej4($data);
                     </div>
                 </div>
             </div>
+            <br />
+            <a href='EjercicioCuatro.php'><button class="btn btn-outline-secondary btn-sm">Volver</button></a>
         </div>
     </div>
 </div>
