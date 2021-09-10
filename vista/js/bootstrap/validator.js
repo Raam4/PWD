@@ -328,7 +328,14 @@ $('#cinemas').bootstrapValidator({
         restriccion: {
             validators:{
                 notEmpty:{
-                    message: 'Debe seleccionar una restricción de edad',
+                    message: 'Debe seleccionar una restricción de edad'
+                }
+            }
+        },
+        archivo: {
+            validators: {
+                notEmpty:{
+                    message: 'Debe subir un archivo'
                 }
             }
         }

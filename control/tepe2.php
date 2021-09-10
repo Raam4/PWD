@@ -35,7 +35,7 @@ class controltp2{
         $rpta .= "<b>Nacionalidad: </b>".$data['nacionalidad']."<br />";
         $rpta .= "<b>Género: </b>".$data['genero']."<br />";
         $rpta .= "<b>Duración: </b>".$data['duracion']." minutos<br />";
-        $rpta .= "<b>Restricción: </b>";
+        $rpta .= "<b>Restricciones de edad: </b>";
         switch($rest){
             case "atp": $rpta .= "Apta para todo público<br />";break;
             case "m7": $rpta .= "Mayores de 7 años<br />";break;

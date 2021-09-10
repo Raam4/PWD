@@ -84,6 +84,14 @@
                       <li><a class="nav-link" href="../TP2/EjercicioCuatro.php">Ejercicio 4</a></li>
                     </ul>
                   </li>
+                  <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#">Trabajo Práctico 3 <i class="fas fa-caret-down"></i> </a>
+                    <ul class="submenu collapse">
+                      <li><a class="nav-link" href="../TP3/EjercicioUno.php">Ejercicio 1</a></li>
+                      <li><a class="nav-link" href="../TP3/EjercicioDos.php">Ejercicio 2</a></li>
+                      <li><a class="nav-link" href="../TP3/EjercicioTres.php">Ejercicio 3</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </nav>
             </aside>
