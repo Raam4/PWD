@@ -1,6 +1,6 @@
 <?php 
 $Titulo = "Index";
-include_once("../vista/estructura/header.php"); ?>
+include_once("../estructura/header.php"); ?>
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-6">
@@ -14,4 +14,4 @@ include_once("../vista/estructura/header.php"); ?>
         </div>
     </div>
 </div>
-<?php include_once("../../vista/estructura/footer.php"); ?>
+<?php include_once("../estructura/footer.php"); ?>

@@ -4,7 +4,7 @@
             </div>
             <footer class="footer mt-auto py-3 bg-dark">
                 <div class="container-fluid">
-                    <p style="color: whitesmoke;">Blog built by me</p>
+                    <p style="color: whitesmoke;">Sitio construido por Lucia Landaeta y Ramiro Cardozo, para la materia Programación Dinámica.</p>
                     <p>
                         <a href="#">Back to top</a>
                     </p>
